@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatListModule } from "@angular/material";
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ApolloConfigModule } from './apollo-config.module';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserAnimationsModule,
+    ApolloConfigModule,
     HttpClientModule,
     MatToolbarModule,
     MatListModule
